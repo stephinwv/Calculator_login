@@ -1,0 +1,15 @@
+Ok <%=fname%> <%=lname%>, let's do some math! <br>
+<i>Please select a math function and choose two numbers.<i/>
+
+<form method = 'post' action = '/do_math'>
+	<input type ='hidden' name = 'fname' value = <%=fname%>>
+	<input type ='hidden' name ='lname' value = <%=lname%>>
+	<input type = 'number' name = 'num1'>
+	<input type = 'number' name = 'num2'>
+	<input type = 'radio' name = 'math' value = "plus">add
+	<input type = 'radio' name = 'math' value = "-">subtract
+	<input type = 'radio' name = 'math' value = "x">multiply
+	<input type = 'radio' name = 'math' value = "/">divide
+
+	<input type = 'submit'>
+</form>
