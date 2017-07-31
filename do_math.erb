@@ -2,12 +2,14 @@ Ok <%=fname%> <%=lname%>, let's do some math! <br>
 <i>Please select a math function and choose two numbers.<i/>
 
 <form method = 'post' action = '/do_math'>
-	<input type ='hidden' name = 'fname' value = <%=fname%>>
-	<input type ='hidden' name ='lname' value = <%=lname%>>
+	<input type = 'hidden' name = 'fname' value = <%=fname%>>
+	<input type = 'hidden' name = 'lname' value = <%=lname%>>
 	<input type = 'number' name = 'num1'>
 	<input type = 'number' name = 'num2'>
 	<input type = 'radio' name = 'math' value = "plus">add
+<!-- Tried to change the value to the + but would not display -->
 	<input type = 'radio' name = 'math' value = "-">subtract
+<!-- Changed the value of math to be a symbol, so that when displayed it will read like a math function -->
 	<input type = 'radio' name = 'math' value = "x">multiply
 	<input type = 'radio' name = 'math' value = "/">divide
 

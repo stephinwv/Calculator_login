@@ -1,2 +1,11 @@
 Here is your results!<br>
- <%=num1%> <%=math%> <%=num2%> = <%=total%>
+ <%=num1%> <%=math%> <%=num2%> = <%=total%><br>
+<!-- Displays number (math function) number = total <br> makes a line break -->
+ Wanna go again???
+ <!-- Added a submit button for a redirect to add new numbers and a new function. -->
+ <form method="post" action="/results">
+ 	<input type = 'hidden' name = 'fname' value = <%=fname%>>
+	<input type = 'hidden' name = 'lname' value = <%=lname%>>
+ 	<input type = 'submit' name = 'submit'>
+ </form>
+
